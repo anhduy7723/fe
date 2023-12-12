@@ -1,0 +1,71 @@
+/* SignCar.css */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Style for the sign__car section */
+.sign__car {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.div__sign__one,
+.div__sign__two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Adjusted for better spacing */
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Ensure equal width for both sections */
+}
+
+.blank_sign {
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.blank_sign:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}
+
+.blank_sign i {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #007bff; /* Icon color */
+}
+
+.text__sign {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; /* Text color */
+}
+
+.opacity__text {
+  font-size: 12px;
+  color: #888;
+}

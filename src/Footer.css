@@ -1,0 +1,141 @@
+.footer__content {
+    margin-top: 50px;
+}
+
+.footer__content .up__top {
+    display: flex;
+    color: white;
+    height: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__content .up__top i {
+    font-size: 30px;
+}
+
+.footer__content .sign__gift {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(138, 137, 137);
+    padding: 32px 52px 32px 52px;
+}
+
+.footer__content .sign__gift a {
+    font-weight: bold;
+    text-align: center;
+    line-height: 76px;
+    height: 76px;
+    width: 280px;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__content .sign__gift a:hover {
+    background-color: rgb(59, 59, 243);
+}
+
+/* ---Service--- */
+
+.all__service {
+    padding-top: 48px;
+    justify-content: space-between;
+    width: 100%;
+    height: 308px;
+}
+
+.footer__content .all__service .ul__service {
+    display: flex;
+    gap: 40px;
+    height: 100%;
+    color: white;
+}
+
+.footer__content .all__service .li__service {
+    list-style-type: none;
+}
+
+.all__service .li__service li {
+    list-style-type: none;
+}
+
+.all__service .li__service .h5__service {
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+/* After hover cho li cos thanh trắng  */
+.ul__service ul li {
+    position: relative;
+    display: flex;
+    margin-bottom: 16px;
+    opacity: 0.7;
+}
+
+.ul__service ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0); /* Ban đầu ẩn thanh trắng */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ul__service ul li:hover::after {
+    transform: scaleX(1); /* Hiện thanh trắng */
+    transform-origin: bottom left;
+}
+
+/* ---End--- */
+
+.footer__content .footer__end {
+    border-top: 1px solid rgb(134, 134, 134);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer__content .ul__end__footer {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+/* after hover li cos thanh trắng */
+.footer__content .ul__end__footer li {
+    position: relative;
+}
+
+.footer__content .ul__end__footer li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer__content .ul__end__footer li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.footer__content .div__end__footer i {
+    margin-left: 20px;
+    font-size: 25px;
+}

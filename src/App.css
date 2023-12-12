@@ -1,38 +1,221 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
 .App {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow flex items to wrap */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.brand-buttons,
+.color-buttons {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 10px;
+}
+
+.brand-buttons button,
+.color-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.brand-buttons button:hover,
+.color-buttons button:hover {
+  background-color: #555;
+}
+
+.car-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.car-list li {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.car-list li:hover {
+  transform: scale(1.05);
+}
+
+.car-list li img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.car-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.car-card-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  text-align: left;
+  position: relative;
+}
+
+.car-card-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+
+.car-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.appointment-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.appointment-container h2 {
+  margin-bottom: 10px;
+}
+
+.appointment-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.appointment-container label {
+  margin-bottom: 10px;
+}
+
+.appointment-container input {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.appointment-container button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.appointment-container button:hover {
+  background-color: #444;
+}
+.sign__car {
+  padding-bottom: 72px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+}
+
+.sign__car .div__sign__one,
+.sign__car .div__sign__two {
+  display: flex;
+  justify-content: center;
+}
+
+.sign__car a {
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(150, 150, 150);
+  text-decoration: none;
+  text-align: center;
+  margin: 0 20px 0px 0px;
+  width: 280px;
+  height: 90px;
+  transition: background-color 0.3s ease;
+}
+
+.sign__car a:hover {
+  background-color: #000000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign__car a:active {
+  background-color: #003366;
+  transition-duration: 0.1s;
 }
